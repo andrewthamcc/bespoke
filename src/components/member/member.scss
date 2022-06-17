@@ -1,0 +1,39 @@
+.member {
+  margin: 2rem 0;
+
+  &-card {
+    border: 1px #121d2d solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+
+    &-top {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-info {
+      margin: 1rem 0;
+    }
+  }
+
+  &-name {
+    font-size: 1.8rem;
+    color: #3c68a5;
+  }
+
+  &-rating-icon {
+    font-weight: 600;
+
+    &-happy {
+      color: #4fc34f;
+    }
+
+    &-sad {
+      color: #ff0000;
+    }
+  }
+}
