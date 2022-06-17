@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem 2rem;
+  background-color: #121d2d;
+  color: #ffffff;
+
+  &-link {
+    font-size: 1.3rem;
+    color: #ffffff;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
