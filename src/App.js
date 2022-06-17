@@ -13,7 +13,7 @@ function App() {
       setMembers(mockMembers)
       setActivityMembers(null)
       return
-    } 
+    }
 
     const filteredMembers = mockMembers.filter((m) =>
       m.last_activity.find((last) => last === activity)
@@ -42,7 +42,10 @@ function App() {
       <Layout>
         <div className="container">
           <Search handleSearch={handleSearch} />
-          <ActivityFilter handleActivityFilter={handleFilter} activityMembers={activityMembers} />
+          <ActivityFilter
+            handleActivityFilter={handleFilter}
+            activityMembers={activityMembers}
+          />
           <MemberList members={members} handleDelete={handleDelete} />
         </div>
       </Layout>

@@ -42,7 +42,10 @@ export const ActivityFilter = ({ handleActivityFilter, activityMembers }) => {
       </div>
 
       {activityMembers && (
-        <p className="activity-filter-count"> <strong>{activityMembers}</strong> Members Partake in this Activity!</p>
+        <p className="activity-filter-count">
+          {' '}
+          <strong>{activityMembers}</strong> Members Partake in this Activity!
+        </p>
       )}
     </div>
   )

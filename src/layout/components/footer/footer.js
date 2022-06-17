@@ -14,7 +14,6 @@ export const Footer = () => {
           >
             Andrew Tham
           </a>
-
         </div>
       </div>
     </footer>
