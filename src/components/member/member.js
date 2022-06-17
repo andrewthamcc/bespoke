@@ -31,6 +31,11 @@ export const Member = ({ handleDelete, member }) => {
         <div className="member-card-activity">
           <p>Latest Activity:</p>
           <ol className="member-activity-list">
+            {parsedActivity.length === 0 && (
+              <p>
+                <em>Uh Oh! No Activity!</em>
+              </p>
+            )}
             {parsedActivity.map((a, index) => (
               <li className="member-activity-item" key={`${a.id}-${index}`}>
                 {a.activity}
