@@ -9,13 +9,11 @@ export const MemberList = ({ members }) => {
 
   return (
     <div className="member-list">
-      <div className="container">
-        <ul>
-          {members.map((m) => (
-            <Member member={m} key={m.id} />
-          ))}
-        </ul>
-      </div>
+      <ul>
+        {members.map((m) => (
+          <Member member={m} key={m.id} />
+        ))}
+      </ul>
     </div>
   )
 }
