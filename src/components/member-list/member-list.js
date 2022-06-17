@@ -2,7 +2,7 @@ import { Member } from '..'
 import PropTypes from 'prop-types'
 import './member-list.scss'
 
-export const MemberList = ({ members }) => {
+export const MemberList = ({ handleDelete, members }) => {
   if (!members || members.length === 0) {
     return <p className="member-list-none">No members found!</p>
   }
@@ -11,7 +11,7 @@ export const MemberList = ({ members }) => {
     <div className="member-list">
       <ul>
         {members.map((m) => (
-          <Member member={m} key={m.id} />
+          <Member handleDelete={handleDelete} member={m} key={m.id} />
         ))}
       </ul>
     </div>

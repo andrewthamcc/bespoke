@@ -1,0 +1,20 @@
+.activity-filter {
+  &-instructions {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  &-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  label {
+    font-size: 1.6rem;
+  }
+
+  &-count {
+    color: #3c68a5;
+  }
+}

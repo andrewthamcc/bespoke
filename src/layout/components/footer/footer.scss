@@ -1,12 +1,14 @@
 .footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-
   padding: 1rem 0;
   background-color: #121d2d;
   color: #ffffff;
+
+  &-flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &-link {
     font-size: 1.3rem;

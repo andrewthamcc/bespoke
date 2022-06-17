@@ -1,7 +1,7 @@
 import './member.scss'
 import { mockActivities } from '../../mock-data'
 
-export const Member = ({ member }) => {
+export const Member = ({ handleDelete, member }) => {
   const parsedActivity = member.last_activity.map((a) =>
     mockActivities.find((ma) => ma.id === a)
   )
@@ -18,7 +18,11 @@ export const Member = ({ member }) => {
           <p className="member-age">Age: {member.age}</p>
           <p className="member-rating">
             Rating: {member.rating} / 5{' '}
-            <span className={`member-rating-icon-${member.rating >= 3 ? 'happy' : 'sad'}`}>
+            <span
+              className={`member-rating-icon-${
+                member.rating >= 3 ? 'happy' : 'sad'
+              }`}
+            >
               {member.rating >= 3 ? ':)' : ':('}
             </span>
           </p>
@@ -34,6 +38,13 @@ export const Member = ({ member }) => {
             ))}
           </ol>
         </div>
+
+        <button
+          className="member-delete"
+          onClick={() => handleDelete(member.id)}
+        >
+          Delete Member
+        </button>
       </div>
     </li>
   )

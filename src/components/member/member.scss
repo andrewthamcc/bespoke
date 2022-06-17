@@ -36,4 +36,20 @@
       color: #ff0000;
     }
   }
+
+  &-delete {
+    border: none;
+    background-color: #121d2d;
+    color: #ffffff;
+    border-radius: 0.4rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    padding: 1rem 0.8rem;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(167, 27, 27);
+    }
+  }
 }
